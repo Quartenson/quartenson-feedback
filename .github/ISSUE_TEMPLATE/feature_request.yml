@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest an improvement for a Quartenson tool or app.
+title: "[Feature]: "
+labels: ["feature"]
+body:
+    - type: dropdown
+      id: area
+      attributes:
+          label: Area
+          options:
+              - Schulte Table Trainer
+              - Visual Search Test
+              - Reaction Time Test
+              - Peripheral Awareness Trainer
+              - Schulte Vision Trainer app
+              - New browser tool
+              - Other
+      validations:
+          required: true
+
+    - type: textarea
+      id: idea
+      attributes:
+          label: What should be improved or added?
+      validations:
+          required: true
+
+    - type: textarea
+      id: value
+      attributes:
+          label: Why would this be useful?
+      validations:
+          required: true

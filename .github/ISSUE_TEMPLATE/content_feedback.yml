@@ -1,0 +1,27 @@
+name: Content feedback
+description: Suggest a correction or improvement for a Quartenson article.
+title: "[Content]: "
+labels: ["content"]
+body:
+    - type: input
+      id: url
+      attributes:
+          label: Article URL
+          placeholder: https://quartenson.com/blog/schulte-table-average-time
+      validations:
+          required: true
+
+    - type: textarea
+      id: feedback
+      attributes:
+          label: What should be corrected or improved?
+      validations:
+          required: true
+
+    - type: textarea
+      id: source
+      attributes:
+          label: Source or reference, if relevant
+          description: Add a link if this is about a factual correction.
+      validations:
+          required: false

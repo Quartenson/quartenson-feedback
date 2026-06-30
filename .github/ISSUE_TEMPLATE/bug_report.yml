@@ -1,0 +1,50 @@
+name: Bug report
+description: Report a problem with a Quartenson tool or page.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+    - type: input
+      id: url
+      attributes:
+          label: Page or tool URL
+          placeholder: https://quartenson.com/tools/schulte-table
+      validations:
+          required: true
+
+    - type: dropdown
+      id: area
+      attributes:
+          label: Area
+          options:
+              - Schulte Table Trainer
+              - Visual Search Test
+              - Reaction Time Test
+              - Peripheral Awareness Trainer
+              - Schulte Vision Trainer app
+              - Blog/article
+              - Other
+      validations:
+          required: true
+
+    - type: textarea
+      id: problem
+      attributes:
+          label: What happened?
+          description: Describe the issue clearly.
+      validations:
+          required: true
+
+    - type: textarea
+      id: expected
+      attributes:
+          label: What did you expect?
+      validations:
+          required: false
+
+    - type: input
+      id: device
+      attributes:
+          label: Device and browser
+          placeholder: iPhone Safari, Android Chrome, Windows Chrome, etc.
+      validations:
+          required: false
